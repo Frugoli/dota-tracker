@@ -46,14 +46,6 @@ src/
 
 More entities and an integration layer will be added as the project grows.
 
-## Design decisions worth mentioning
-
-A few choices I made while building this, in case they help anyone reading the code:
-
-- `estimatedMmr` is `number | null` instead of defaulting to `0`. A null MMR means "not calculated yet", which is different from an actual MMR of zero.
-- Entities validate their own data inside the constructor (for example, `steamId` and `name` can't be empty), instead of trusting whoever creates them.
-- Fields that already come calculated from an external API (like `hoursPlayed`) live directly on the entity. Fields that need to be calculated from a list of other entities (like total ranked matches) will be methods instead, once the `Match` entity exists.
-
 ## License
 
 MIT
