@@ -15,7 +15,7 @@ This is a work in progress, and that's on purpose. The commit history shows how 
 🚧 Early stage — I'm building the domain entities first, with full test coverage, before connecting any real API.
 
 - [x] `Player` entity (profile, status, MMR, sync logic)
-- [ ] `Match` entity
+- [x] `Match` entity
 - [ ] `Hero` entity
 - [ ] Steam Web API integration
 - [ ] OpenDota API integration
